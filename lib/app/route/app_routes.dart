@@ -1,16 +1,20 @@
 
-part of 'app_pages.dart';
 
+part of 'app_pages.dart';
 abstract class Routes{Routes._();
-static const MAIN_APP_PAGE=_Paths.MAIN_APP_PAGE;
-static const SPLASH_SCREEN=_Paths.SPLASH_SCREEN;
-  static const HOME=_Paths.HOME;
+static const splashScreen=_Path.splashScreen;
+static const mainAppPage=_Path.mainAppPage;
+
+static const userInput=_Path.userInput;
+  static const home=_Path.home;
 }
 
 
-abstract class _Paths{
-  _Paths._();
-  static const  MAIN_APP_PAGE= '/main_app-page';
-  static const SPLASH_SCREEN = '/splash-screen';
-  static const HOME='/home';
+ class _Path{
+  _Path._();
+   static const splashScreen = '/splash-screen';
+  static const  mainAppPage= '/main_app-page';
+ 
+  static const userInput = '/user-input';
+  static const home='/home';
 }
